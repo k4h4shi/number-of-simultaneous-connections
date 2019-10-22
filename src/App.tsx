@@ -59,7 +59,7 @@ const useSimultaneousConnectionCounter = (lifeExpectancySec: number) => {
     const unsubscribe = collection.onSnapshot(async snapshot => {
       const currentDate = moment(new Date());
       const someSecondsBeforeCurrentDate = currentDate
-        .subtract("seconds", lifeExpectancySec)
+        .subtract(lifeExpectancySec, "seconds")
         .toDate();
 
       const doc = await snapshot.query
