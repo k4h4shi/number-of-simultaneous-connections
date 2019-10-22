@@ -1,5 +1,5 @@
 {
-  "name": "number-of-simultaneous-connections",
+  "name": "current-access-counter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
